@@ -94,15 +94,19 @@ class Post{
 
                     ?>
                     <script>
-                        function toggle<?php echo $id?>() //id here is the post ID
+                        function toggle<?php echo $id?>() 
                         {
-                            var element=document.getElementById("toggleComment<?php echo $id?>");
-                            // console.log(element);
-
-                            if(element.style.display=='block')
-                                element.style.display='none';
-                            else
-                                element.style.display='block';
+                            var target=$(event.target);
+                            if(!target.is("a")) //when the anchor tag for profile is not the target
+                            {
+                                var element=document.getElementById("toggleComment<?php echo $id?>");
+                                // console.log(element);
+                                if(element.style.display=='block')
+                                    element.style.display='none';
+                                else
+                                    element.style.display='block';
+                            }
+                            
                         }
                     </script>
                     <?php
