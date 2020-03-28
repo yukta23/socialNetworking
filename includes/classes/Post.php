@@ -110,6 +110,9 @@ class Post{
                         }
                     </script>
                     <?php
+                    
+                    $comment_query=mysqli_query($this->conn,"SELECT * FROM comments WHERE post_id='$id'");
+                    $num_comments=mysqli_num_rows($comment_query);
 
                     //Time Frame
                     $date_time_now=date("Y-m-d H:i:s");
