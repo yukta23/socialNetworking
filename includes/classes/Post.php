@@ -177,7 +177,10 @@ class Post{
                                 </div>
                                 <div id='post_body'>
                                     $body
-                                    <br>
+                                    <br><br>
+                                </div>
+                                <div class='comment_details' style='color:#0d7cdc;'>
+                                Comments($num_comments)
                                 </div>
                                 <div class='post_comment' id='toggleComment$id' style='display:none;'>
                                     <iframe src='comments_frame.php?post_id=$id' frameborder=0 style='width:100%;max-height:250px'></iframe>
