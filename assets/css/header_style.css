@@ -1,0 +1,128 @@
+body,html{
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height:100%;
+    background-color: #e0e8f8; 
+}
+.navbar{
+    width:100%;
+    height:8%;
+    min-width:1050px;
+    background-color: #90a9d8;
+    border-bottom: 2px solid #64687d;
+    margin-bottom:10px;
+    padding-left: 25px;
+    padding-top: 2px;
+}
+
+.logo a{
+    font-family: 'Lobster', cursive;
+    font-size: 200%;
+    color:#fff;
+    text-decoration: none;
+    text-shadow: #000 2px 2px 1px;
+}
+
+nav{
+    float:right;
+}
+
+nav a{
+    margin:2px;
+    text-decoration: none;
+    color:#fff;
+    font-size: 150%; 
+}
+nav a:hover{
+    color:#5e4096;
+}
+
+.wrapper{
+    margin:0px auto;
+    margin-top: 2%;
+    width:80%;
+    z-index: -1; /*to always appear behind the navbar*/
+}
+.user_details{
+    padding:10px;
+    float:left;
+    font-size: 110%;
+    border:1px solid #D3D3D3;
+    background-color: #fff;
+    width:28%;
+    margin-right: 5%;
+    box-shadow: #D3D3D3 3px 3px 1px ;
+    border-radius:4px;
+}
+.user_details img{
+    border-radius: 4px;
+}
+.left_right{
+    /* padding-top: 5px; */
+    display:inline-block;
+    line-height: 25px;
+    margin-left: 5px;
+}
+.main_column{
+    box-shadow: #D3D3D3 3px 3px 1px ;
+    border-radius:4px;
+    width: 65%;
+    display:inline-block;
+    z-index: -1;
+    background-color: #fff;
+}
+.post_form{
+    width:100%;
+    margin:1%;
+}
+.post_form textarea{
+    width:80%;
+    height:10%;
+    font-size: 15px;
+    border:2px solid #D3D3D3;
+    border-radius: 5px;
+    padding:5px;
+}
+textarea:focus{
+    outline: none;
+    border: 1px solid rgb(86, 180, 239);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 8px rgba(82, 168, 236, 0.6);
+}
+#post_button{
+    width:7%;
+    height:60px;
+    border:none;
+    margin-left: 1.5%;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #90a9d8;
+    font-family: 'Lobster', cursive;
+    font-size: 150%;
+    color: #fff;
+    text-shadow: #000 2px 2px 1px;
+    outline: none;
+}
+#post_button:focus, #morePostsButton:focus{
+    background-color: #64687d;
+}
+
+#morePost{
+    margin:0 auto;
+    border:none;
+    border-radius: 10px;
+    background-color: #90a9d8;
+    font-family: 'Lobster', cursive;
+    font-size: 150%;
+    color: #fff;
+    text-shadow: #000 2px 2px 1px;
+    outline: none;
+
+}
+
+/* .status_post{
+    width:96%;
+    font-size:15px;
+    min-height:75px;
+    margin-left: 2%;
+} */
