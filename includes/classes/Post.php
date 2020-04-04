@@ -183,9 +183,10 @@ class Post{
                                     <br><br>
                                 </div>
                                 <div class='comment_details' style='color:#0d7cdc;'>
-                                Comments($num_comments)
+                                Comments($num_comments)&emsp;&emsp;
+                                <iframe src='like.php?post_id=$id' frameborder=0 scrolling='no' style='width:20%;height:20px;position:absolute;'></iframe>
                                 </div>
-                                <div class='post_comment' id='toggleComment$id' style='display:none;'>
+                                <div class='post_comment' id='toggleComment$id' style='display:none;background-color:#e3e8eb'>
                                     <iframe src='comments_frame.php?post_id=$id' frameborder=0 style='width:100%;max-height:250px'></iframe>
                                 </div>
                             </div><hr> ";
