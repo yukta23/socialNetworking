@@ -42,7 +42,7 @@ else //if the user isn't logged in then move to register.php
             <a href="<?php echo $loggedInUser; ?>" style="text-decoration:none"><?php echo $user['first_name']?></a>
             <a href="index.php" data-toggle="tooltip" data-placement="bottom" title="Home"><i class="fa fa-home fa-lg"></i></a>
             <a href="#" data-toggle="tooltip" data-placement="bottom" title="Notifications"><i class="fa fa-bell-o fa-lg"></i></a>
-            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Friend Requests"><i class="fa fa-users fa-lg"></i></a>
+            <a href="friend_request.php" data-toggle="tooltip" data-placement="bottom" title="Friend Requests"><i class="fa fa-users fa-lg"></i></a>
             <a href="#" data-toggle="tooltip" data-placement="bottom" title="Settings"><i class="fa fa-cog fa-lg"></i></a>
             <a href="includes/handlers/logout.php" data-toggle="tooltip" data-placement="bottom" title="Sign Out"><i class="fa fa-sign-out fa-lg"></i></a>
         </nav>

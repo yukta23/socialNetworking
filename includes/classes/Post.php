@@ -130,11 +130,11 @@ class Post{
                     else if($interval->m >=1)
                     {
                         if($interval->d ==0)
-                            $date=" ago";
+                            $days=" ago";
                         else if($interval->d ==1)
-                            $date=$interval->d." day ago";
+                            $days=$interval->d." day ago";
                         else
-                            $date=$interval->d." days ago";
+                            $days=$interval->d." days ago";
                         
                         if($interval->m==1)
                             $time_message=$interval->m." month ".$days;
